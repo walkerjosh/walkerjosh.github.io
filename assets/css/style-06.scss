@@ -1,0 +1,732 @@
+/*
+ *
+ * Project Name: Manten - Style 6
+ * URL: http://templatesuper.com
+ * Version: 1.0
+ *
+ * Author: Adnan
+ *
+ */
+
+// COLOR
+
+$primary-color : #9cd1d7;
+
+// IMPORT FONTS
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
+
+// IMPORT ICONS
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+//PACE
+.pace {
+  -moz-user-select       : none;
+  -webkit-user-select    : none;
+  user-select            : none;
+  -webkit-pointer-events : none;
+  pointer-events         : none;
+}
+
+.pace-inactive {
+  display : none;
+}
+
+.pace .pace-progress {
+  z-index    : 2000;
+  position   : fixed;
+  top        : 0;
+  right      : 100%;
+  width      : 100%;
+  height     : 2px;
+  background : $primary-color;
+}
+
+body,
+html {
+  height     : 100%;
+  min-height : 100%;
+}
+
+body {
+  position       : relative;
+  margin         : 0;
+  padding        : 0;
+  color          : #828282;
+  font-family    : 'Pontano Sans',
+                   sans-serif;
+  font-size      : 100%;
+  letter-spacing : 1px;
+}
+
+a, a:visited, a:focus, a:active, a:hover, button:focus{
+    outline:0 none !important;
+}
+
+/*
+  #########################################################################
+  #
+  Header 06
+  #########################################################################
+*/
+
+
+.header-06 {
+  height : 100%;
+
+  .container-fluid {
+    padding : 0;
+  }
+
+  .flexslider .slides > li {
+    display             : none;
+    width               : 100%;
+    height              : 100%;
+    background-position : center;
+    background-size: cover;
+  }
+
+  .flex-viewport,
+  .flexslider-container,
+  .flexslider .slides {
+    height : 100%;
+  }
+
+  ul.slides {
+    margin  : 0;
+    padding : 0;
+  }
+
+  .flexslider {
+    width    : 100%;
+    height   : 100%;
+    margin   : 0;
+    padding  : 0;
+    overflow : hidden;
+    border   : 0;
+  }
+
+  .flex-control-nav {
+    position     : absolute;
+    bottom       : 0;
+    width        : 100%;
+    padding-left : 0;
+    text-align   : center;
+  }
+
+  .flex-control-nav li {
+    display  : inline-block;
+    *display : inline;
+    zoom     : 1;
+    margin   : 0 6px;
+  }
+
+  .flex-control-paging li a {
+    display               : block;
+    width                 : 6px;
+    height                : 6px;
+    -moz-border-radius    : 20px;
+    -webkit-border-radius : 20px;
+    border-radius         : 20px;
+    background            : #666;
+    background            : rgba(0, 0, 0, 0.5);
+    -moz-box-shadow       : inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -o-box-shadow         : inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow    : inset 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow            : inset 0 0 3px rgba(0, 0, 0, 0.3);
+    text-indent           : -9999px;
+    cursor                : pointer;
+  }
+
+  .flex-control-paging li a:hover {
+    background : #333;
+    background : rgba(0, 0, 0, 0.7);
+  }
+
+  .flex-control-paging li a.flex-active {
+    background : #000;
+    background : rgba(0, 0, 0, 0.9);
+    cursor     : default;
+  }
+
+  .caption {
+    z-index          : 99;
+    position         : absolute;
+    top              : 0;
+    bottom           : 0;
+    left             : 0;
+    width            : 350px;
+    height           : auto;
+    color            : #fff;
+    background-color : $primary-color;
+  }
+
+  .box {
+    position       : absolute;
+    top            : 50%;
+    left           : 0;
+    width          : 100%;
+    margin-top     : -25px;
+    text-transform : uppercase;
+    letter-spacing : 2px;
+  }
+
+  .caption h1 {
+    text-transform : uppercase;
+    font-family    : 'Varela Round',
+                     sans-serif;
+    font-size      : 3em;
+    font-weight    : bold;
+    letter-spacing : 2px;
+  }
+
+  .caption h6 {
+    text-transform : uppercase;
+    letter-spacing : 2px;
+  }
+
+  .navbar-default {
+    border-color : transparent;
+    background   : transparent;
+  }
+
+  .navbar-default .navbar-toggle {
+    border : transparent;
+  }
+
+  .navbar-header {
+    float : none;
+  }
+
+  .navbar-toggle {
+    display : block;
+  }
+
+  .navbar-collapse.collapse {
+    display : none!important;
+  }
+
+  .navbar-nav {
+    float : none!important;
+  }
+
+  .navbar-nav > li {
+    float : none;
+  }
+
+  .collapsing,
+  .navbar-collapse.collapse.in {
+    display    : block !important;
+    position   : absolute;
+    right      : 25px;
+    width      : 180px;
+    background : $primary-color;
+    text-align : center;
+  }
+
+  .collapse.in .navbar-nav > li,
+  .collapsing .navbar-nav > li {
+    display       : block;
+    border-bottom : 1px dashed lighten($primary-color, 5%);
+  }
+
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:focus,
+  .navbar-default .navbar-nav > .active > a:hover {
+    color            : #555;
+    background-color : #000;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color          : #fff;
+    text-transform : uppercase;
+    letter-spacing : 2px;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover {
+    color : #555;
+  }
+
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border : none;
+  }
+
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    background : transparent;
+  }
+}
+
+/*
+  #########################################################################
+  #
+  Story 06
+  #########################################################################
+*/
+
+
+.story-06 {
+  padding : 120px 0;
+
+  h3 {
+    color       : $primary-color;
+    font-family : 'Varela Round',
+                  sans-serif;
+    font-weight : bold;
+  }
+
+  h3,
+  h5 {
+    text-align     : center;
+    text-transform : uppercase;
+    letter-spacing : 2px;
+  }
+
+  h5 {
+    color : #828282;
+  }
+
+  .title {
+    margin-bottom : 50px;
+  }
+
+  .content {
+    text-align : center;
+
+    p {
+      font-size   : 1.6em;
+      line-height : 28px;
+    }
+
+    h5 {
+      padding-top : 20px;
+      color       : #828282;
+      border-top  : 1px dashed #dedede;
+      font-size   : 1.9em;
+    }
+  }
+}
+
+/*
+  #########################################################################
+  #
+  wedding 06
+  #########################################################################
+*/
+
+
+.wedding-06 {
+  padding    : 120px 0;
+  background : #f5f5f5;
+
+  img {
+    max-width : 300px;
+    float     : left;
+  }
+
+  .place {
+    padding-top  : 80px;
+    padding-left : 320px;
+
+    p {
+      margin-bottom : 0;
+      font-size     : 1.6em;
+      line-height   : 28px;
+    }
+
+    h3 {
+      color          : #828282;
+      text-transform : uppercase;
+      font-size      : 1.2em;
+      letter-spacing : 2px;
+    }
+
+    h4 {
+      margin-bottom  : 20px;
+      color          : $primary-color;
+      text-transform : uppercase;
+      font-family    : 'Varela Round',
+                       sans-serif;
+      font-size      : 1.8em;
+      font-weight    : bold;
+      letter-spacing : 2px;
+    }
+
+    .btn-default {
+      margin-top     : 60px;
+      padding        : 10px 25px;
+      color          : #fff;
+      border         : 1px solid $primary-color;
+      border-radius  : 0;
+      background     : $primary-color;
+      letter-spacing : 3px;
+    }
+
+    .btn-default:hover {
+      color      : $primary-color;
+      border     : 1px solid $primary-color;
+      background : transparent;
+    }
+  }
+}
+
+/*
+  #########################################################################
+  #
+  Accomm 06
+  #########################################################################
+*/
+
+
+.accomm-06 {
+  width   : 100%;
+  padding : 120px 0;
+
+  h3 {
+    text-align     : center;
+    font-size      : 1.3em;
+    letter-spacing : 2px;
+  }
+
+  h5 {
+    color          : $primary-color;
+    text-transform : uppercase;
+    font-family    : 'Varela Round',
+                     sans-serif;
+    font-size      : 3.5em;
+    font-weight    : bold;
+    letter-spacing : 2px;
+  }
+
+  p {
+    margin-bottom : 0;
+    font-size     : 1.6em;
+    line-height   : 28px;
+  }
+
+  .btn-default {
+    margin-top     : 20px;
+    padding        : 10px 25px;
+    color          : #fff;
+    border         : 1px solid $primary-color;
+    border-radius  : 0;
+    background     : $primary-color;
+    letter-spacing : 3px;
+  }
+
+  .btn-default:hover {
+    color      : $primary-color;
+    border     : 1px solid $primary-color;
+    background : transparent;
+  }
+}
+
+/*
+  #########################################################################
+  #
+  Registry 06
+  #########################################################################
+*/
+
+
+.registry-06 {
+  padding    : 120px 0;
+  background : #f5f5f5;
+
+  h3 {
+    margin-bottom  : 50px;
+    color          : #444;
+    text-transform : uppercase;
+    font-family    : 'Varela Round',
+                     sans-serif;
+    font-weight    : bold;
+    letter-spacing : 2px;
+  }
+
+  .box {
+    text-align : center;
+
+    div {
+      height        : 40px;
+      margin-bottom : 60px;
+      line-height   : 40px;
+    }
+
+    img {
+      display    : inline-block;
+      max-width  : 225px;
+      max-height : 120%;
+    }
+
+    .btn-default {
+      display        : block;
+      margin-top     : 20px;
+      padding        : 10px 25px;
+      color          : #fff;
+      border         : 1px solid $primary-color;
+      border-radius  : 0;
+      background     : $primary-color;
+      letter-spacing : 3px;
+    }
+
+    .btn-default:hover {
+      color      : $primary-color;
+      border     : 1px solid $primary-color;
+      background : transparent;
+    }
+  }
+}
+
+/*
+  #########################################################################
+  #
+  RSVP 06
+  #########################################################################
+*/
+
+
+.rsvp-06 {
+  width               : 100%;
+  padding             : 120px 0;
+  color               : #fff;
+  background-position : center;
+  text-align          : center;
+
+  h3 {
+    margin-top     : 0;
+    margin-bottom  : 20px;
+    text-transform : uppercase;
+    font-family    : 'Varela Round',
+                     sans-serif;
+    font-size      : 2.7em;
+    font-weight    : bold;
+    letter-spacing : 2px;
+    letter-spacing : 1px;
+  }
+
+  p {
+    margin-bottom  : 40px;
+    font-size      : 1.6em;
+    line-height    : 28px;
+    letter-spacing : 1px;
+  }
+
+  .form-control {
+    height        : 50px;
+    border-radius : 0;
+  }
+
+  .btn-default {
+    height         : 50px;
+    padding-right  : 50px;
+    padding-left   : 50px;
+    color          : #fff;
+    border         : 1px solid $primary-color;
+    border-radius  : 0;
+    background     : $primary-color;
+    letter-spacing : 2px;
+  }
+
+  .btn-default:hover {
+    color      : $primary-color;
+    border     : 1px solid $primary-color;
+    background : transparent;
+  }
+
+  ::-webkit-input-placeholder {
+    text-align     : center;
+    text-transform : uppercase;
+    letter-spacing : 2px;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    text-align : center;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align : center;
+  }
+
+  :-ms-input-placeholder {
+    text-align : center;
+  }
+}
+
+footer {
+  padding        : 50px 0;
+  color          : #828282;
+  text-align     : center;
+  line-height    : 20px;
+  letter-spacing : 2px;
+}
+
+.scroll-to-top a {
+  display     : block;
+  width       : 40px;
+  height      : 40px;
+  color       : #fff;
+  font-size   : 20px;
+  line-height : 40px;
+}
+
+.scroll-to-top {
+  z-index            : 9999;
+  position           : fixed;
+  right              : 20px;
+  bottom             : 20px;
+  opacity            : 0;
+  border-radius      : 4px;
+  background         : $primary-color;
+  filter             : alpha(opacity=0);
+  text-align         : center;
+  -webkit-transition : opacity 0.5s;
+  transition         : opacity 0.5s;
+}
+
+.scroll-to-top.affix {
+  opacity : 0.5;
+  filter  : alpha(opacity=50);
+}
+
+.affix {
+  position : fixed;
+}
+
+/*
+  ---------------------------------------------------
+  Large Devices, Wide
+  Screens
+  -----------------------------------------------------
+*/
+
+
+@media only screen
+       and (max-width: 1200px) {
+}
+
+/*
+  --------------------------------------------------
+  Medium Devices,
+  Desktops
+  ----------------------------------------------------
+*/
+
+
+@media only screen
+       and (max-width: 992px) {
+}
+
+/*
+  -------------------------------------------------
+  Small Devices,
+  Tablets
+  ---------------------------------------------------
+*/
+
+
+@media only screen
+       and (max-width: 768px) {
+  .header-06 {
+    .caption h1 {
+      color     : #fff;
+      font-size : 2.5em;
+    }
+
+    .caption h6 {
+      color       : #fff;
+      text-shadow : none;
+    }
+  }
+
+  // WEDDING 06
+  .wedding-06 {
+    .col-md-6 {
+      text-align : center;
+    }
+
+    img {
+      display   : inline-block;
+      max-width : 80%;
+      float     : none;
+    }
+
+    .place {
+      padding : 20px 0 0;
+    }
+  }
+
+  // REGISTRY 06
+  .registry-06 {
+    .box div {
+      margin-bottom : 20px;
+    }
+
+    .box .btn-default {
+      margin-bottom : 30px;
+    }
+  }
+}
+
+/*
+  ------------------------------------------------
+  Mobile
+  -------------------------------------------------
+*/
+
+
+@media only screen
+       and (max-width: 480px) {
+  .container {
+    padding-right : 20px;
+    padding-left  : 20px;
+  }
+
+  .header-06 {
+    .caption {
+      width : 100%;
+    }
+
+    .caption h1 {
+      font-size : 2em;
+    }
+
+    .caption h6 {
+      text-shadow : none;
+    }
+  }
+
+  // WEDDING 06
+  .wedding-06 {
+    .col-md-6 {
+      text-align : center;
+    }
+
+    img {
+      display   : inline-block;
+      max-width : 80%;
+      float     : none;
+    }
+
+    .place {
+      padding : 20px 0 0;
+    }
+  }
+
+  // REGISTRY 06
+  .registry-06 {
+    .box div {
+      margin-bottom : 20px;
+    }
+
+    .box .btn-default {
+      margin-bottom : 30px;
+    }
+  }
+
+  .pace .pace-progress {
+    background-color : #fff;
+  }
+}
